@@ -1,77 +1,80 @@
-# trust-me-bro-llm
-Trust me, bro. —— 本仓库唯一也是全部的理论依据
 
-<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
-  <!-- 背景渐变 -->
-  <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#ff6b9d;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#c06ce5;stop-opacity:1" />
-    </linearGradient>
-    
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-  </defs>
-  
-  <rect width="800" height="400" fill="url(#bg)"/>
-  
-  <!-- 可疑的AI图标 -->
-  <g transform="translate(400, 120)">
-    <!-- AI头像圆圈 -->
-    <circle cx="0" cy="0" r="60" fill="#fff" opacity="0.9"/>
-    
-    <!-- 眼睛（斜眼看的表情） -->
-    <ellipse cx="-20" cy="-10" rx="8" ry="12" fill="#000"/>
-    <ellipse cx="20" cy="-10" rx="8" ry="12" fill="#000"/>
-    
-    <!-- 可疑的微笑 -->
-    <path d="M -25 15 Q 0 30 25 15" stroke="#000" stroke-width="3" fill="none" stroke-linecap="round"/>
-    
-    <!-- 闪光特效 -->
-    <circle cx="45" cy="-45" r="8" fill="#fff" opacity="0.8"/>
-    <circle cx="50" cy="-35" r="4" fill="#fff" opacity="0.6"/>
-  </g>
-  
-  <!-- 主标题 -->
-  <text x="400" y="220" font-family="Arial Black, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="#fff" filter="url(#glow)">
-    TRUST ME BRO
-  </text>
-  
-  <!-- 副标题 -->
-  <text x="400" y="255" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#fff" opacity="0.95">
-    LLM Edition™
-  </text>
-  
-  <!-- 恶搞标语 -->
-  <g transform="translate(400, 290)">
-    <rect x="-180" y="-22" width="360" height="44" rx="22" fill="#000" opacity="0.3"/>
-    <text x="0" y="5" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#fff">
-      🎭 专业恶搞俊俊 · 100%靠谱*
-    </text>
-  </g>
-  
-  <!-- 底部小字免责声明 -->
-  <text x="400" y="340" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#fff" opacity="0.7">
-    *靠谱程度取决于你对"Trust Me Bro"的理解
-  </text>
-  
-  <!-- 装饰性星星 -->
-  <g opacity="0.6">
-    <text x="100" y="100" font-size="30" fill="#fff">⭐</text>
-    <text x="680" y="120" font-size="25" fill="#fff">✨</text>
-    <text x="150" y="350" font-size="28" fill="#fff">💫</text>
-    <text x="700" y="330" font-size="26" fill="#fff">🌟</text>
-  </g>
-  
-  <!-- "Powered by 刘泽俊" 恶搞标识 -->
-  <g transform="translate(400, 365)">
-    <text x="0" y="0" font-family="Comic Sans MS, cursive" font-size="16" text-anchor="middle" fill="#fff" opacity="0.8">
-      💖 Powered by 俊俊的撒娇语录 💖
-    </text>
-  </g>
-</svg>
+
+<div align="center">
+
+# 🧠 trust-me-bro-llm
+
+**Trust me, bro. —— 本仓库唯一也是全部的理论依据。**
+
+<img src="./images/x.png" width="800"/>
+
+</div>
+
+---
+
+## 🤡 项目简介
+
+你是否曾梦想拥有一个完全不靠谱、但又莫名其妙能跑的大模型？  
+你是否厌倦了那些严肃、正经、一本正经胡说八道的 AI 项目？  
+你是否想恶搞朋友、老板、导师、甚至自己？
+
+欢迎来到 `trust-me-bro-llm` —— 一个你不该相信，但你偏要相信的 SFT 项目。  
+我们不讲逻辑、不看论文、不跑 benchmark。我们只相信一句话：
+
+> **Trust me, bro.**
+
+## 🧱 项目结构
+
+```
+trust-me-bro-llm/
+├── data/         # 数据？什么数据？你猜。
+├── images/       # 项目灵魂图像，x.jpg，建议打印贴墙上膜拜。
+├── llama_sft/    # 看起来像是 LLaMA 的 SFT，其实是……你朋友的自拍？
+└── llama_factory # llama factory lora sft配置文件。
+├── models/       # 模型存放地，空的也没关系，反正我们靠玄学，这里面还放了一些3some的模型。大家自行探索。
+├── src/          # 源代码，写得像诗，跑得像梦。
+├── LICENSE       # 你可以用，但别怪我。
+└── README.md     # 你正在看，已经被修改过，说明有人认真过。
+```
+
+## 🚀 如何运行
+
+1. 克隆仓库，拿走数据集（本仓库不包含主要的sft逻辑，主要是处理专门数据，后续若想修改人名也可以参考data_augment.py）：  
+   ```bash
+   git clone https://github.com/gufehhh/trust-me-bro-llm.git # 拿走我的数据集和llama factory配置文件即可
+   ```
+
+2. 运行训练脚本：  
+   ```bash
+   https://github.com/hiyouga/LLaMA-Factory/blob/main/README_zh.md  # 作者是基于这个进行sft的，没有手搓sft的代码
+   ```
+
+3. 等待奇迹发生。
+
+## 🧪 理论依据
+
+我们不看论文，我们只看兄弟的眼神。  
+如果你问我们为什么这样设计，我们只会说：
+
+> **Trust me, bro.**
+
+## 🧘‍♂️ 项目哲学
+
+- 模型不一定要准，但一定要帅。
+- 数据不一定要干净，但一定要有故事。
+- 代码不一定要能跑，但一定要有灵魂。
+
+## 🧯 注意事项
+
+- 本项目可能导致你朋友怀疑你的人格。
+- 请勿在严肃场合使用本模型（如论文答辩、公司汇报、相亲现场）。
+- 如果你真的训练出了一个能用的模型，请立刻停止并反思。
+
+## 📜 LICENSE
+
+你可以随便用、随便改、随便骂，但请记得：
+
+> **Trust me, bro.**
+
+---
+

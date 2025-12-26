@@ -2,7 +2,7 @@ import json
 import os
 
 import config
-OUTPUT_FILE = config.PROCESSED_DATA_DIR / "processed_sft.json"
+OUTPUT_FILE = config.PROCESSED_DATA_DIR / "processed_sft_lzj.json"
 INPUT_FILE = config.PROCESSED_DATA_DIR / "processed_sft_all.json"
 '''
 这个文件用于将jsonl格式的文件转化为标注json格式文件
